@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/google/gopacket/layers"
 	// 	"fmt"
 	// 	"os"
 	"fmt"
@@ -24,5 +25,6 @@ func main() {
 }
 
 func handlePacket(p gopacket.Packet) {
-	fmt.Print(p)
+	fmt.Print(p.Layer(layers.LayerTypeIPv4))
+	fmt.Print("\n")
 }
