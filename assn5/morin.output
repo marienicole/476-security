@@ -1,0 +1,14 @@
+Marie Morin and Brandon May
+Computer Security Assn 5
+-----
+1. Probability of success = 1-(1-(1/2^20))^n
+                          = 1-(0.99999904632)^n
+
+2. 524284.625446 =~ 524285 runs
+
+3. Yes-- I would create a number generator that removes the number it generates
+   every time from the list of numbers. So, if it generates 350, 350 is removed
+   from the list of length 2^20 and cannot be returned again.
+
+4. probability of success = 1-n/(2^20))^n
+   To get a probability of at least 0.5, we would need an n of ~853.
